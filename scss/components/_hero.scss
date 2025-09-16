@@ -8,6 +8,7 @@
         border-radius: 30px;
         padding-top: 130px;
         position: relative;
+        overflow: hidden;
         &::before {
             content: '';
             position: absolute;
@@ -69,6 +70,9 @@
                 display: block;
                 margin: 0 auto;
                 box-sizing: border-box;
+                padding: 24px 36px;
+                border-radius: 16px;
+                
 
             }
 		}
@@ -76,9 +80,8 @@
 		// .hero__slider
 
 		&__slider {
-            margin-top: 130px;
+            margin-top: 100px;
             box-sizing: border-box;
-            height: 320px;
 		}
 
 		// .hero__slider-swiper

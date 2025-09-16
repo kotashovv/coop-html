@@ -1,0 +1,118 @@
+.platform {
+    display: block;
+    padding: 120px 0;
+    // .platform__item
+
+    &__item {
+        display: flex;
+        align-items: stretch;
+        justify-content: space-between;
+
+        &:nth-child(2n+2) {
+            flex-direction: row-reverse;
+
+            .platform__text {
+                margin-right: 0;
+                margin-left: 45px;
+            }
+        }
+
+        margin-bottom: 80px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        &.green {
+            .platform__img {
+                &::before {
+                    background: linear-gradient(0deg, #8CDAC9, #8CDAC9),
+                        linear-gradient(180deg, #61AA80 0%, #3C7F58 100%);
+
+                }
+            }
+            .main-btn {
+                background-color: #3C7F58;
+            }
+        }
+
+        &.blue {
+             .platform__img {
+                &::before {
+                    background: linear-gradient(180deg, #5B6A96 0%, #374365 100%);
+
+
+                }
+            }
+            .main-btn {
+                background-color: #374365;
+            }
+        }
+
+
+    }
+
+    // .platform__text
+
+    &__text {
+        padding-top: 80px;
+        width: 50%;
+        max-width: 445px;
+        margin-right: 45px;
+
+        h2 {
+            color: var(--black);
+            margin: 0;
+            display: block;
+            margin-bottom: 12px;
+        }
+
+        p {
+            margin: 0;
+            font-size: 16px;
+            color: var(--black);
+            display: block;
+            line-height: 1.5;
+            margin-bottom: 25px;
+
+        }
+    }
+
+    // .platform__img
+
+    &__img {
+        display: flex;
+        justify-content: center;
+        position: relative;
+        width: 60%;
+
+        &::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            background: linear-gradient(180deg, #4B8BF2 0%, #3441E4 100%);
+            height: calc(100% - 60px);
+            border-radius: 32px;
+            width: 100%;
+            z-index: -1;
+        }
+
+        img {
+            box-shadow: 0px 8px 40px 0px #0D14781F;
+            display: block;
+            max-width: 90%;
+            width: 100%;
+            box-sizing: border-box;
+            border-radius: 12px 12px 0 0 ;
+        }
+    }
+}
+
+.container {}
+
+.main-btn {}
+
+.green {}
+
+.blue {}
