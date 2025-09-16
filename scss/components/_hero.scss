@@ -1,0 +1,121 @@
+
+.hero {
+        background-color: #F6F6F6;
+        box-sizing: border-box;
+        max-width: 100%;
+        display: block;
+        margin: 20px 40px;
+        border-radius: 30px;
+        padding-top: 130px;
+        position: relative;
+        &::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 25%;
+            background-image: url(/assets/imgs/decor-hero.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: calc(75%);
+        }
+
+		// .hero__top
+
+		&__top {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: var(--blue);
+            svg {
+                display: block;
+                margin-right: 10px;
+
+            }
+		}
+
+		// .hero__text
+
+		&__text {
+
+            margin-top: 20px;
+            margin-bottom: 25px;
+            h1 {
+                color: var(--black);
+                text-align: center;
+                max-width: 890px;
+                display: block;
+                margin: 0 auto;
+                font-size: 44px;
+                text-transform: uppercase;
+                margin-bottom: 12px;
+            }
+            p {
+                text-align: center;
+                display: block;
+                max-width: 890px;
+                color: var(--black);
+                margin: 0 auto;
+            }
+
+            
+		}
+
+		// .hero__action
+
+		&__action {
+            display: block;
+            button {
+                display: block;
+                margin: 0 auto;
+                box-sizing: border-box;
+
+            }
+		}
+
+		// .hero__slider
+
+		&__slider {
+            margin-top: 130px;
+            box-sizing: border-box;
+            height: 320px;
+		}
+
+		// .hero__slider-swiper
+
+		&__slider-swiper {
+            .swiper-wrapper {
+                overflow: visible;
+            }
+            .swiper-slide {
+                transition: .25s linear;
+                img {
+                    display: block;
+                    border-radius: 32px 32px 0 0 ;
+                    width: 100%;
+                    box-sizing: border-box;
+                }
+                
+                &.swiper-slide-active {
+                    box-sizing: border-box;
+                    z-index: 10;
+                }
+                &.swiper-slide-prev {
+                    transform: scale(.8) translate(15%, 15%);
+                }
+                &.swiper-slide-next {
+                    transform: scale(.8) translate(-15%, 15%);
+                }
+            }
+		}
+}
+.container {
+}
+.main-btn {
+}
+.swiper {
+}
+.swiper-wrapper {
+}
+.swiper-slide {
+}

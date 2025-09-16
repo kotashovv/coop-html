@@ -1,0 +1,46 @@
+:root {
+    --black: #16181E;
+    --blue: #1928F0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+.container {
+    max-width: 1190px;
+    margin: 0 auto;
+    padding: 0 15px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+.wrapper {
+    position: relative;
+}
+
+
+.trans-btn {
+    color: var(--blue);
+    border: 1px solid var(--blue);
+    padding: 14px 20px;
+    display: block;
+    box-sizing: border-box;
+    width: fit-content;
+    text-decoration: none;
+    border-radius: 32px;
+}
+
+.main-btn {
+    background-color: var(--blue);
+    border: none;
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 24px 32px;
+    box-sizing: border-box;
+    cursor: pointer;
+    border-radius: 16px;
+    
+}
