@@ -1,0 +1,46 @@
+.serv3 {
+    padding: 70px 0;
+    // .serv3__body
+
+    &__body {
+        display: flex;
+        align-items: center;
+        gap: 32px;
+    }
+
+    // .serv3__text
+
+    &__text {
+        width: 50%;
+
+        h2 {
+            font-weight: 700;
+            font-size: 34px;
+            line-height: 140%;
+            letter-spacing: 0%;
+            margin: 0;
+            margin-bottom: 16px;
+        }
+
+        p {
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 160%;
+            margin: 0;
+            display: block;
+        }
+    }
+
+    // .serv3__img
+
+    &__img {
+        width: 50%;
+        img {
+            display: block;
+            width: 100%;
+            box-sizing: border-box;
+
+        }
+    }
+}
+

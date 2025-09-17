@@ -1,6 +1,8 @@
 :root {
     --black: #16181E;
     --blue: #1928F0;
+    --dark: #525981;
+    --gray: #F6F6F6; 
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
@@ -48,8 +50,57 @@ body {
     display: flex;
     align-items: center;
     width: fit-content;
+
     svg {
         display: block;
         margin-left: 10px;
+    }
+
+    &.dark {
+        background: linear-gradient(270deg, #2B3249 0%, #3D4367 100%),
+            linear-gradient(0deg, #374365, #374365);
+
+            color: #fff;
+    }
+}
+
+.burger-btn {
+    display: none;
+    @media(max-width:767px) {
+        display: block;
+    }
+
+    width: 32px;
+    height: 32px;
+    box-sizing: border-box;
+    border: none;
+    background-color: transparent;
+    position: relative;
+    cursor: pointer;
+    span {
+        position: absolute;
+        left: 2px;
+        background-color: var(--black);
+        height: 2px;
+        top: calc(50% - 1px);
+        width: calc(100% - 4px);
+    }
+    &::before {
+        content: '';
+        position: absolute;
+        left: 2px;
+        top: 4px;
+        background-color: var(--black);
+        height: 2px;
+        width: calc(100% - 4px);
+    }
+    &::after {
+        content: '';
+        position: absolute;
+        bottom: 4px;
+        left: 2px;
+        background-color: var(--black);
+        height: 2px;
+        width: calc(100% - 4px);
     }
 }

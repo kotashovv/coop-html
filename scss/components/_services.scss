@@ -1,0 +1,284 @@
+.serv-wrapper {
+    display: block;
+    margin: 0 20px;
+}
+
+.serv-main {
+    background-color: #F6F6F6;
+    box-sizing: border-box;
+    max-width: 1480px;
+
+    margin: 0 auto;
+    // .serv-main__text
+    min-height: 760px;
+
+    margin-top: -70px;
+    display: flex;
+    align-items: stretch;
+
+    border-radius: 16px;
+
+    overflow: hidden;
+    z-index: 1;
+
+    &__text {
+        padding: 170px 80px 40px;
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+
+        h1 {
+            font-size: 42px;
+            color: var(--black);
+            font-weight: 700;
+            line-height: 1.4;
+            max-width: 670px;
+            margin: 0;
+            margin-bottom: 15px;
+            display: block;
+            text-transform: uppercase;
+        }
+
+        p {
+            margin: 0;
+            line-height: 1.5;
+            font-size: 18px;
+            color: var(--black);
+            margin-bottom: 32px;
+            display: block;
+        }
+
+        .action {
+            margin-bottom: 32px;
+
+            button {
+                border-radius: 16px;
+            }
+        }
+
+        .subtext {
+            font-size: 18px;
+            color: var(--black);
+            box-sizing: border-box;
+            display: block;
+            margin-bottom: auto;
+        }
+
+        .subinfo {
+            font-size: 12px;
+            color: var(--black);
+            max-width: 370px;
+            display: block;
+            box-sizing: border-box;
+        }
+    }
+
+    // .serv-main__img
+
+    &__img {
+        background: linear-gradient(270deg, #2B3249 0%, #3D4367 100%);
+        box-sizing: border-box;
+        position: relative;
+        display: flex;
+        align-items: flex-end;
+        width: 40%;
+        padding: 24px;
+
+        &::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+            background-image: url(/assets/imgs/serv-main.png);
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position-y: 20%;
+            background-position-x: center;
+        }
+
+        .text {
+            background: #525981;
+            max-width: 430px;
+            width: 100%;
+            color: #fff;
+            box-sizing: border-box;
+            padding: 24px;
+            border-radius: 16px;
+
+            p {}
+
+            h4 {
+                margin: 0;
+                font-weight: 600;
+                font-size: 16px;
+                margin-bottom: 10px;
+            }
+
+            p {
+                margin: 0;
+                display: block;
+                font-size: 14px;
+                font-weight: 500;
+            }
+        }
+    }
+}
+
+@media(max-width:1280px) {
+    .serv-main {
+        &__text {
+            padding: 170px 10px 40px 40px;
+        }
+
+        &__img {
+            width: 50%;
+            max-width: 530px;
+
+            &::before {
+                background-size: 590px;
+                background-position: left center;
+            }
+
+            .text {
+                max-width: 430px;
+            }
+        }
+    }
+}
+
+@media(max-width:1190px) {
+    .serv-main {
+        &__text {
+            width: 100%;
+            box-sizing: border-box;
+            max-width: none;
+            margin: 0;
+            padding-top: 120px;
+
+            h1 {}
+        }
+
+        &__img {
+            width: 100%;
+            max-width: none;
+            margin: 0;
+            border-radius: 32px;
+            margin-bottom: 20px;
+
+            .text {
+                width: 100%;
+                max-width: 50%;
+                z-index: 100;
+                color: #fff;
+
+                p {
+                    color: #fff;
+                }
+
+            }
+
+            &::before {
+                background-size: 40%;
+                background-position: right top;
+            }
+        }
+    }
+}
+
+@media(max-width:920px) {
+    .serv-main {
+        &__text {
+            padding: 120px 20px 30px;
+            h1 {
+                font-size: 42px;
+            }
+            .action {
+                margin-bottom: 24px;
+            }
+            .subtext {
+                margin-bottom: 40px;
+            }
+        }
+
+        &__img {
+
+            .text {
+                max-width: 320px;
+                z-index: 100;
+
+                p {
+                    font-size: 14px;
+                }
+            }
+
+            &::before {
+                background-size: 50%;
+                background-position-x: 110%;
+                background-position-y: 5vw;
+            }
+        }
+    }
+}
+
+
+@media(max-width:767px) {
+    .serv-wrapper {
+        margin: 0 12px;
+    }
+
+    .serv-main {
+        margin-top: -52px;
+        &__text {
+            padding-left: 12px;
+            padding-right: 12px;
+            padding-bottom: 0;
+            padding-top: 100px;
+            h1 {
+                font-size: 27px;
+                color: #000;
+
+            }
+            p {
+                font-size: 14px;
+            }
+
+            .for-adaptive {
+                order: 10;
+            }
+            .subtext {
+                margin-bottom: 20px;
+                font-size: 14px;
+            }
+            .subinfo {
+                margin-bottom: 20px;
+                font-size: 10px;
+            }
+        }
+        .for-adaptive {
+            margin: 0 -20px;
+        }
+        &__img {
+            height: 510px;
+            padding: 12px;
+            &::before {
+                background-size: 87%;
+                background-position: top right;
+            }
+            .text {
+                width: 100%;
+                max-width: none;
+                left: 0;
+                h3 {
+                    font-size: 14px;
+
+                }
+                p {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}

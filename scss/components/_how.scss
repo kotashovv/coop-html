@@ -6,8 +6,36 @@
     // .how__title
     padding: 80px 0 120px;
 
+    &.custom {
+        background: linear-gradient(270deg, #2B3249 0%, #3D4367 100%);
+        .how {
+            &__items {
+                flex-wrap: wrap;
+            }
+
+            &__item {
+                width: calc(33.33% - 24px);
+                
+                .num {
+                    &::after {
+                        background-size: 100% 50%;
+                        width: calc(100% - 90px);
+                    }
+                }
+                &:nth-child(3n + 3) {
+                    .num {
+                        &::after {
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
     &__title {
         margin-bottom: 60px;
+
         h3 {
             font-size: 40px;
             margin: 0;
@@ -36,6 +64,10 @@
             position: relative;
             font-weight: 700;
             margin-bottom: 20px;
+            &.active {
+                transition: .35s ease;
+                color: #FFA17C;
+            }
             &::after {
                 content: '';
                 position: absolute;
@@ -48,6 +80,7 @@
                 background-position: center right;
             }
         }
+
         .text {
             h3 {
                 font-size: 22px;
@@ -57,6 +90,7 @@
                 box-sizing: border-box;
                 margin-bottom: 15px;
             }
+
             p {
                 margin: 0;
                 line-height: 1.5;
