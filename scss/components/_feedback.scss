@@ -1,8 +1,12 @@
 .feedback {
     padding: 80px 0;
-    box-sizing: border-boxs;
+    box-sizing: border-box;
     // .feedback__body
-
+    &.custom {
+        .feedback__body {
+            background: #1928F0;
+        }
+    }
     &__body {
         background: linear-gradient(270deg, #2B3249 0%, #3D4367 100%);
         border-radius: 20px;
