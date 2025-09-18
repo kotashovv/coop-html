@@ -72,6 +72,12 @@
             }
         }
     }
+    &.custom {
+        .serv4__item {
+            min-height: 460px;
+            background-size: auto 80%;
+        }
+    }
 }
 
 @media(max-width:920px) {
@@ -115,5 +121,33 @@
             padding-top: 40vw;
             background-size: 100% auto;
         }
+        &.custom {
+            .serv4__item {
+                min-height: 0;
+                padding-top: 0;
+                height: 340px;
+                background-size: cover;
+            }
+        }
     }
+}
+
+.serv4 {
+    
+		// .serv4__action
+
+		&__action {
+            @media(max-width:767px) {
+                display: none;
+            }
+            margin-top: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: stretch;
+            gap: 18px;
+            a, button {
+                border-radius: 12px;
+                padding: 24px 60px;
+            }
+		}
 }

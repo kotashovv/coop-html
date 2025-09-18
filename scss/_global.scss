@@ -50,7 +50,15 @@ body {
     display: flex;
     align-items: center;
     width: fit-content;
-
+    &.blue {
+        background-color: #1928F0;
+        color: #fff;
+    }
+    &.orange {
+        background-color: #EB5A20;
+        color: #fff;
+        border-radius: 16px;
+    }
     svg {
         display: block;
         margin-left: 10px;
