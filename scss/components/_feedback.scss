@@ -92,8 +92,47 @@
     }
 }
 
-.container {}
-
-.text {}
-
-.form {}
+@media(max-width:920px) {
+    .feedback {
+        &__body {
+            padding: 50px 24px;   
+        }
+    }
+}
+@media(max-width:767px) {
+    .feedback {
+        padding: 40px 0;
+        &__body {
+            margin: 0 -15px;
+            padding: 40px 16px;
+            .text {
+                h2 {
+                    font-size: 24px;
+                    line-height: 1.4;
+                }
+                p {
+                   font-size: 16px;
+                }
+            }
+            .form {
+                form {
+                    flex-direction: column;
+                    label {
+                        width: 100%;
+                        margin: 0;
+                        input {
+                            padding: 20px 16px;
+                        }
+                        max-width: none;
+                    }
+                    button {
+                        width: 100%;
+                        padding: 20px 16px;
+                        box-sizing: border-box;
+                    }
+                }
+            }
+        }
+    
+    }
+}

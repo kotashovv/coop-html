@@ -51,9 +51,21 @@
             }
         }
 }
-.container {
-}
-.action {
-}
-.main-btn {
+
+@media(max-width:767px) {
+    .serv5 {
+        padding: 40px 0;
+        &__title {
+            margin-bottom: 15px;
+            h2 {
+                font-size: 18px;
+            }
+        }
+        &__items {
+            margin-bottom: 24px;
+        }
+        &__item {
+            font-size: 12px;   
+        }
+    }
 }

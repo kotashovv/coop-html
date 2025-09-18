@@ -8,6 +8,7 @@
 
     &.custom {
         background: linear-gradient(270deg, #2B3249 0%, #3D4367 100%);
+
         .how {
             &__items {
                 flex-wrap: wrap;
@@ -15,13 +16,14 @@
 
             &__item {
                 width: calc(33.33% - 24px);
-                
+
                 .num {
                     &::after {
                         background-size: 100% 50%;
                         width: calc(100% - 90px);
                     }
                 }
+
                 &:nth-child(3n + 3) {
                     .num {
                         &::after {
@@ -64,10 +66,12 @@
             position: relative;
             font-weight: 700;
             margin-bottom: 20px;
+
             &.active {
                 transition: .35s ease;
                 color: #FFA17C;
             }
+
             &::after {
                 content: '';
                 position: absolute;
@@ -101,8 +105,83 @@
     }
 }
 
-.container {}
 
-.num {}
 
-.text {}
+@media(max-width:920px) {
+    .how {
+        &.custom {
+            .how {
+                &__items {}
+
+                &__item {
+                    width: calc(50% - 24px);
+
+                    &::before {
+                        display: block;
+
+                    }
+
+                    &:nth-child(2n + 2) {
+                        .num {
+                            &::after {
+                                display: none;
+                            }
+                        }
+                    }
+
+                    &:nth-child(2n + 1) {
+                        .num {
+                            &::after {
+                                display: block;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media(max-width:767px) {
+    .how {  
+        padding: 40px 0;
+        
+        &.custom {
+            
+            .how {
+                &__title {
+                    margin-bottom: 24px;
+                    h3 {
+                        font-size: 24px;
+                    }
+                }
+                
+                &__items {}
+
+                &__item {
+                    width: 100%;
+
+                    .num {
+                        font-size: 48px;
+                        &:nth-child(2n + 1) {
+                            &::after {
+                                display: none;
+                            }
+                        }
+                    }
+                    .text {
+                        h3 {
+                            font-size: 20px;
+                        }
+                        p {
+                            font-size: 14px;
+                        }
+                    }
+
+                    
+                }
+            }
+        }
+    }
+}

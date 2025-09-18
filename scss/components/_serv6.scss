@@ -2,7 +2,12 @@
     box-sizing: border-box;
     padding: 120px 0 80px;
     box-sizing: border-box;
+    overflow: hidden;
+
     // .serv6__block
+    .container {
+        padding: 0;
+    }
 
     &__block {
         display: flex;
@@ -10,6 +15,7 @@
         align-items: center;
 
         margin-bottom: 45px;
+
         .text {
             margin-right: 40px;
             position: relative;
@@ -58,6 +64,8 @@
     // .serv6__item
 
     &__item {
+        width: 50%;
+
         &.left {
             display: flex;
             flex-direction: column;
@@ -180,6 +188,7 @@
                 display: flex;
                 justify-content: center;
                 height: 100%;
+
                 a {
                     text-align: center;
                     background-color: #EB5A20;
@@ -200,6 +209,7 @@
         }
 
         &.right {
+
             .item-head {
                 background-color: #fafafa;
                 box-sizing: border-box;
@@ -221,6 +231,18 @@
                     }
                 }
             }
+
+            .right-content {
+                position: relative;
+                width: 100%;
+                height: 100%;
+                svg {
+                    height: fit-content;
+                    width: 100%;
+                    
+                }
+
+            }
         }
     }
 
@@ -232,21 +254,133 @@
 
     &__final {}
 }
+.serv6 {
+    &__mobile-tab {
+        display: none;
+    }
+}
+@media(max-width:767px) {
+    .serv6 {
+        padding: 40px 0;
+        
+        &__mobile-tab {
+            
+            display: flex;
+            align-items: stretch;
+            background-color: #fafafa;
+            border-radius: 0 32px 0 0 ;
+            overflow: hidden;
+            .item-head {
+                background-color: #C8F8C2;
+                box-sizing: border-box;
+                padding: 12px;
+                border-radius: 0 32px 0 0;
+                width: 50%;
+                
+                span {
+                    display: block;
+                    font-size: 18px;
+                    color: #00A055;
+                    font-weight: 600;
 
-.container {}
+                    &:first-child {
+                        font-size: 24px;
+                        line-height: 1.2;
+                        color: #00A055;
+                        font-weight: 700;
+                    }
+                }
 
-.text {}
+                &:last-child {
+                    background-color: #fafafa;
+                    span {
+                        color: #9F9F9F;
+                    }
+                }
+            }
 
-.img {}
+            &.bottom {
+                border-radius: 0 0 32px 0;
+                .item-head {
+                    border-radius: 0 0 32px 0;
+                    &:last-child {
+                        border-radius:  0 0 32px 0;
 
-.left {}
+                    }
+                }
+            }
 
+        }
 
+        &__body {
+            background-color: #fafafa;
+        }
 
-.item-content {}
+        &__block {
+            padding: 0 15px;
+            flex-direction: column;
 
-.action {}
+            .text {
+                margin-right: 0;
+                margin-bottom: 24px;
 
-.main-btn {}
+                svg {
+                    display: none;
+                }
 
-.right {}
+                h2 {
+                    font-size: 24px;
+                    text-align: center;
+
+                    span {
+                        display: inline;
+                    }
+                }
+
+            }
+
+            .img {
+                width: 100%;
+                max-width: 280px;
+                height: 280px;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: contain;
+                }
+            }
+        }
+
+        &__item {
+            .item-head {
+                display: none;
+            }
+
+            display: none;
+            width: 100%;
+
+            box-sizing: border-box;
+
+            &.active {
+                display: flex;
+            }
+
+            &.left {
+                width: calc(100% - 20px);
+                margin-left: -20px;
+                border-radius: 0 32px 32px 0;
+                .item-content {
+                    padding: 16px 24px;
+
+                    .serv6__punkt {
+                        padding: 24px 12px;
+                        line-height: 1.4;
+                        color: #000;
+                        margin-bottom: 20px;
+                    }
+                }
+            }
+        }
+    }
+}

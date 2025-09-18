@@ -30,11 +30,27 @@ document.addEventListener('DOMContentLoaded', () => {
     })
 
     const casesSlider = new Swiper('.cases__items', {
-        slidesPerView: 3,
         spaceBetween: 24,
         navigation: {
             prevEl: '.cases-btn-prev',
             nextEl: '.cases-btn-next',
+        },
+        breakpoints: {
+            0: {
+                slidesPerView: 1.2
+            },
+            560: {
+                slidesPerView: 1.5
+            },
+            767: {
+                slidesPerView: 1.5
+            },
+            920: {
+                slidesPerView: 2.5
+            },
+            1200: {
+                slidesPerView: 3,
+            },
         }
     })
 

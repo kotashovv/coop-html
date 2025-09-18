@@ -5,6 +5,7 @@
 
     &__title {
         margin-bottom: 40px;
+
         h2 {
             font-weight: 700;
             font-size: 40px;
@@ -30,17 +31,21 @@
         box-sizing: border-box;
         border-bottom: 1px solid #c0c8d2;
         transition: .35s ease;
+
         &.active {
             padding-bottom: 20px;
+
             button {
                 &::before {
                     transform: rotate(45deg);
                 }
             }
+
             .text {
                 opacity: 1;
             }
         }
+
         button {
             display: block;
             width: 100%;
@@ -54,22 +59,26 @@
             color: var(--black);
             position: relative;
             cursor: pointer;
+            padding-right: 40px;
+
             &::before {
                 content: '+';
                 position: absolute;
                 transition: .35s ease;
                 right: 0;
-                top: calc(50% - 20px);
+                top: 15px;
                 font-weight: 300;
                 font-size: 32px;
                 font-family: serif;
             }
         }
+
         .text {
             max-height: 0;
             overflow: hidden;
             opacity: 0;
             transition: .35s ease;
+
             p {
                 margin: 0;
                 display: block;
@@ -78,5 +87,22 @@
                 color: var(--black);
             }
         }
+    }
+}
+
+
+@media(max-width:767px) {
+    .faq {
+        padding: 40px 0;
+        box-sizing: border-box;
+
+        &__title {
+            margin: 0 auto 20px;
+            max-width: 320px;
+            h2 {
+                font-size: 24px;
+            }
+        }
+
     }
 }
