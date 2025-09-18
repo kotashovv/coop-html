@@ -104,3 +104,16 @@ body {
         width: calc(100% - 4px);
     }
 }
+
+.section-title {
+    display: block;
+    text-align: center;
+    font-size: 40px;
+    margin: 0;
+    color: var(--black);
+    margin: 0 auto;
+    max-width: 910px;
+    @media(max-width:767px) {
+        font-size: 24px;
+    }
+}
