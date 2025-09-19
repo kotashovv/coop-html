@@ -38,7 +38,8 @@
             padding: 8px 12px;
             box-sizing: border-box;
             background-color: #E1E4EE;
-            border-radius: 16px;
+            border-radius: 40px;
+            
             
 		}
         .action {
@@ -48,7 +49,10 @@
             a {
                 background-color: #3D4367;
                 color: #fff;
-                
+                &:hover {
+                    background-color: #2f333f;
+                    transition: .35s ease;
+                }
             }
         }
 }

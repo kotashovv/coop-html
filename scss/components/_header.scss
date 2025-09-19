@@ -84,7 +84,7 @@
         a,
         button {
             transition: .35s ease;
-
+            font-size: 14px;
             &.trans-btn {
                 &:hover {
                     background-color: #fff;
@@ -135,7 +135,6 @@
                 &__title {
                     a {
                         svg {
-                            width: 90px;
                         }
 
                         font-size: 18px;
@@ -150,12 +149,24 @@
 @media(max-width:920px) {
     .header {
         padding: 0 40px;
+        &.custom {
+            .header {
+                &__title {
+                    a {
+                        max-width: 220px;
+                        svg{
+
+                        }
+                    }
+                }
+            }
+        }
     }
 }
 
 @media(max-width:767px) {
     .header {
-        margin-top: 20px;
+        margin-top: 40px;
         padding: 0 20px;
 
         &__nav {

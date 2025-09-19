@@ -144,7 +144,7 @@
             display: block;
             z-index: 2;
             position: relative;
-            margin-bottom: 30px;
+            margin-bottom: 30px;  
             img {
                 display: block;
                 width: 100%;
@@ -153,6 +153,12 @@
 
             }
         }
+    }
+}
+
+@media(max-width:767px) {
+    .platf{
+        margin: 20px 10px 0;
     }
 }
 
