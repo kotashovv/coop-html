@@ -65,10 +65,7 @@ body {
     }
 
     &.dark {
-        background: linear-gradient(270deg, #2B3249 0%, #3D4367 100%),
-            linear-gradient(0deg, #374365, #374365);
-
-            color: #fff;
+        background-color: #374365;
     }
 }
 

@@ -34,7 +34,7 @@
         span {
             display: block;
             font-size: 16px;
-            color: var(--black);
+            color: #2F333F;
             margin-bottom: 20px;
             
         }
@@ -45,13 +45,16 @@
                 font-weight: 500;
                 margin-bottom: 4px;
             }
-            color: var(--black);
+            color: #2F333F;
             font-size: 16px;
             font-weight: 400;
             line-height: 1.5;
             margin: 0;
             margin-bottom: 20px;
           
+        }
+        .main-btn {
+            background-color: #374365;
         }
     }
 

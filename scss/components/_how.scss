@@ -79,13 +79,14 @@
                 top: calc(50% - 5px);
                 height: 10px;
                 width: calc(100% - 70px);
-                background-image: url(/assets/imgs/vector.png);
+                background-image: url(../../assets/imgs/vector.png);
                 background-repeat: no-repeat;
                 background-position: center right;
             }
         }
 
         .text {
+            opacity: .9;
             h3 {
                 font-size: 22px;
                 font-weight: 600;

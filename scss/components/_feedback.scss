@@ -9,9 +9,9 @@
     }
     &__body {
         background: linear-gradient(270deg, #2B3249 0%, #3D4367 100%);
-        border-radius: 20px;
+        border-radius: 16px;
         display: block;
-        padding: 60px 100px;
+        padding: 60px 48px;
         color: #fff;
 
         .text {
@@ -90,6 +90,10 @@
                     border-radius: 20px;
                     border: none;
                     cursor: pointer;
+                    transition: .35s ease ;
+                    &:hover {
+                         background-color: #d64810;
+                    }
                 }
             }
         }

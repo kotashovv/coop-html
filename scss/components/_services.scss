@@ -62,6 +62,7 @@
             box-sizing: border-box;
             display: block;
             margin-bottom: auto;
+            font-weight: 500;
         }
 
         .subinfo {
@@ -69,6 +70,7 @@
             color: var(--black);
             max-width: 370px;
             display: block;
+            line-height: 1.4;
             box-sizing: border-box;
         }
     }
@@ -95,7 +97,7 @@
             background-image: url(../../assets/imgs/serv-main.png);
             background-repeat: no-repeat;
             background-size: contain;
-            background-position-y: 20%;
+            background-position-y: 25%;
             background-position-x: center;
         }
 
@@ -115,6 +117,7 @@
                 font-weight: 600;
                 font-size: 16px;
                 margin-bottom: 10px;
+                opacity: .9;
             }
 
             p {
@@ -122,6 +125,8 @@
                 display: block;
                 font-size: 14px;
                 font-weight: 500;
+                line-height: 1.5;
+                opacity: .9;
             }
         }
     }

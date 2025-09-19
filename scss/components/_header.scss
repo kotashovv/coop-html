@@ -40,7 +40,7 @@
             color: var(--black);
             text-decoration: none;
             font-weight: 500;
-            color: #374365;
+            color: var(--blue);
             font-size: 22px;
 
             svg {
@@ -67,6 +67,11 @@
                     display: block;
                     color: inherit;
                     text-decoration: none;
+                    transition: .35s ease;
+
+                    &:hover {
+                        color: var(--blue);
+                    }
                 }
             }
         }
@@ -75,7 +80,17 @@
     // .header__action
 
     &__action {
-        
+
+        a,
+        button {
+            transition: .35s ease;
+            &:Hover {
+                border-color: var(--blue);
+                background-color: var(--blue);
+                color: #fff;
+                border: 1px solid var(--blue) !important;
+            }
+        }
     }
 }
 
@@ -96,6 +111,7 @@
         &__title {
             margin-right: 20px;
         }
+
         &.custom {
             .trans-btn {
                 border-color: var(--black);
@@ -108,11 +124,13 @@
                         gap: 20px;
                     }
                 }
+
                 &__title {
                     a {
                         svg {
                             width: 90px;
                         }
+
                         font-size: 18px;
                     }
                 }
@@ -132,18 +150,21 @@
     .header {
         margin-top: 20px;
         padding: 0 20px;
+
         &__nav {
             display: none;
         }
+
         &__title {
             margin-right: auto;
         }
+
         &__action {
             a {
                 display: none;
             }
-            button {
-            }
+
+            button {}
         }
     }
 }
