@@ -48,10 +48,11 @@
 
     .pp-link {
         margin-bottom: 15px;
-
+        margin-top: 4px;
         a {
             text-decoration: none;
             color: #BABABA;
+            text-decoration: underline;
             font-size: 16px;
             font-weight: 400;
             line-height: 1.4;

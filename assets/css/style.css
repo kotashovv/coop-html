@@ -21,6 +21,9 @@ body {
           box-sizing: border-box;
   margin: 0;
 }
+body button {
+  font-family: inherit;
+}
 
 .wrapper {
   position: relative;
@@ -178,7 +181,7 @@ body {
   color: var(--black);
   text-decoration: none;
   font-weight: 500;
-  color: var(--blue);
+  color: #374365;
   font-size: 22px;
 }
 .header__title a svg {
@@ -214,12 +217,11 @@ body {
   -webkit-transition: 0.35s ease;
   transition: 0.35s ease;
 }
-.header__action a:Hover,
-.header__action button:Hover {
-  border-color: var(--blue);
-  background-color: var(--blue);
-  color: #fff;
-  border: 1px solid var(--blue) !important;
+.header__action a.trans-btn:hover,
+.header__action button.trans-btn:hover {
+  background-color: #fff;
+  border: 1px solid #fff;
+  color: #374365;
 }
 
 @media (max-width: 1440px) {
@@ -539,9 +541,6 @@ body {
   background-repeat: no-repeat;
   background-position: center right;
 }
-.how__item .text {
-  opacity: 0.9;
-}
 .how__item .text h3 {
   font-size: 22px;
   font-weight: 600;
@@ -553,6 +552,7 @@ body {
 }
 .how__item .text p {
   margin: 0;
+  opacity: 0.9;
   line-height: 1.5;
   font-size: 16px;
 }
@@ -719,6 +719,12 @@ body {
 }
 .serv-main__text .action button {
   border-radius: 16px;
+  padding: 24px 36px;
+  -webkit-transition: 0.35s ease;
+  transition: 0.35s ease;
+}
+.serv-main__text .action button:hover {
+  background-color: var(--dark);
 }
 .serv-main__text .subtext {
   font-size: 18px;
@@ -764,7 +770,7 @@ body {
   background-image: url(../../assets/imgs/serv-main.png);
   background-repeat: no-repeat;
   background-size: contain;
-  background-position-y: 25%;
+  background-position-y: 30%;
   background-position-x: center;
 }
 .serv-main__img .text {
@@ -1195,7 +1201,6 @@ body {
   font-weight: 600;
   display: block;
   margin-bottom: 10px;
-  opacity: 0.9;
 }
 .serv4__item .text p {
   margin: 0;
@@ -1281,7 +1286,7 @@ body {
 }
 
 .serv5 {
-  padding: 60px 0 80px;
+  padding: 80px 0 80px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   background-color: var(--gray);
@@ -1420,6 +1425,8 @@ body {
   overflow: hidden;
   display: block;
   margin-bottom: 20px;
+  border-radius: 16px;
+  overflow: hidden;
 }
 .cases__slide .img img {
   display: block;
@@ -1457,7 +1464,7 @@ body {
   font-size: 16px;
   color: var(--black);
   border: 1px solid var(--black);
-  border-radius: 36px;
+  border-radius: 40px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1508,33 +1515,23 @@ body {
   background-color: var(--gray);
   border: none;
   cursor: pointer;
-}
-.cases__nav .cases-btn::before {
-  content: "";
-  width: 12px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-line-pack: center;
-      align-content: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  height: 12px;
-  border: 2px solid #000;
-  border-right: none;
-  border-bottom: none;
-  border-radius: 2px 0 0 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
-.cases__nav .cases-btn-prev::before {
-  -webkit-transform: translate(95%, 0) rotate(-45deg);
-      -ms-transform: translate(95%, 0) rotate(-45deg);
-          transform: translate(95%, 0) rotate(-45deg);
+.cases__nav .cases-btn svg {
+  display: block;
 }
-.cases__nav .cases-btn-next::before {
-  -webkit-transform: translate(60%, 0) rotate(135deg);
-      -ms-transform: translate(60%, 0) rotate(135deg);
-          transform: translate(60%, 0) rotate(135deg);
+.cases__nav .cases-btn-next svg {
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg);
 }
 
 @media (max-width: 1280px) {
@@ -1801,13 +1798,13 @@ body {
   display: block;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  padding: 24px;
+  padding: 24px 48px;
   font-size: 16px;
   background-color: #EB5A20;
   color: #fff;
-  border-radius: 20px;
   border: none;
   cursor: pointer;
+  border-radius: 16px;
   -webkit-transition: 0.35s ease;
   transition: 0.35s ease;
 }
@@ -2068,7 +2065,7 @@ body {
   text-align: center;
   color: var(--black);
   background-color: #fff;
-  border: 1px solid #00A055;
+  border: 2px solid #00A055;
   margin-bottom: 30px;
   font-size: 18px;
   color: var(--black);
@@ -3117,10 +3114,12 @@ body {
 }
 .footer .pp-link {
   margin-bottom: 15px;
+  margin-top: 4px;
 }
 .footer .pp-link a {
   text-decoration: none;
   color: #BABABA;
+  text-decoration: underline;
   font-size: 16px;
   font-weight: 400;
   line-height: 1.4;

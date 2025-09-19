@@ -53,6 +53,11 @@
 
             button {
                 border-radius: 16px;
+                padding: 24px 36px;
+                transition: .35s ease;
+                &:hover {
+                    background-color: var(--dark);
+                }
             }
         }
 
@@ -97,7 +102,7 @@
             background-image: url(../../assets/imgs/serv-main.png);
             background-repeat: no-repeat;
             background-size: contain;
-            background-position-y: 25%;
+            background-position-y: 30%;
             background-position-x: center;
         }
 
@@ -197,12 +202,15 @@
     .serv-main {
         &__text {
             padding: 120px 20px 30px;
+
             h1 {
                 font-size: 42px;
             }
+
             .action {
                 margin-bottom: 24px;
             }
+
             .subtext {
                 margin-bottom: 40px;
             }
@@ -236,16 +244,19 @@
 
     .serv-main {
         margin-top: -52px;
+
         &__text {
             padding-left: 12px;
             padding-right: 12px;
             padding-bottom: 0;
             padding-top: 100px;
+
             h1 {
                 font-size: 27px;
                 color: #000;
 
             }
+
             p {
                 font-size: 14px;
             }
@@ -253,33 +264,41 @@
             .for-adaptive {
                 order: 10;
             }
+
             .subtext {
                 margin-bottom: 20px;
                 font-size: 14px;
             }
+
             .subinfo {
                 margin-bottom: 20px;
                 font-size: 10px;
             }
         }
+
         .for-adaptive {
             margin: 0 -20px;
         }
+
         &__img {
             height: 510px;
             padding: 12px;
+
             &::before {
                 background-size: 87%;
                 background-position: top right;
             }
+
             .text {
                 width: 100%;
                 max-width: none;
                 left: 0;
+
                 h3 {
                     font-size: 14px;
 
                 }
+
                 p {
                     font-size: 14px;
                 }

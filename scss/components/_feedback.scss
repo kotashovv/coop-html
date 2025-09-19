@@ -83,13 +83,13 @@
                 button {
                     display: block;
                     box-sizing: border-box;
-                    padding: 24px;
+                    padding: 24px 48px;
                     font-size: 16px;
                     background-color: #EB5A20;
                     color: #fff;
-                    border-radius: 20px;
                     border: none;
                     cursor: pointer;
+                    border-radius: 16px;
                     transition: .35s ease ;
                     &:hover {
                          background-color: #d64810;
