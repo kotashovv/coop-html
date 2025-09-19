@@ -1417,6 +1417,9 @@ body {
           box-sizing: border-box;
   height: 280px;
   background-color: var(--gray);
+  overflow: hidden;
+  display: block;
+  margin-bottom: 20px;
 }
 .cases__slide .img img {
   display: block;
