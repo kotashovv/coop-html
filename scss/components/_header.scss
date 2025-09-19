@@ -1,5 +1,5 @@
 .header {
-    margin-top: 40px;
+    margin-top: 60px;
     box-sizing: border-box;
     width: 100%;
     z-index: 100;
@@ -91,6 +91,10 @@
                     border: 1px solid #fff;
                     color: #374365;
                 }
+            }
+            &.trans-btn.blue {
+                border-color: var(--blue);
+                color: var(--blue);
             }
 
         }

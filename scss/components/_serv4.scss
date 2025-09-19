@@ -7,10 +7,19 @@
 
         h2 {
             text-align: center;
-            margin: 0;
             display: block;
             font-size: 40px;
+            margin: 0 auto;
             color: var(--black);
+        }
+        p {
+            margin: 0;
+            display: block;
+            margin-top: 20px;
+            font-size: 20px;
+            font-weight: 500;
+            color: #000;
+            text-align: center;
         }
     }
 
@@ -52,7 +61,7 @@
 
         .text {
             background: linear-gradient(270deg, #2B3249 0%, #3D4367 100%);
-            padding: 20px;
+            padding: 24px;
             box-sizing: border-box;
             color: #fff;
 

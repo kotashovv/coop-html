@@ -4,19 +4,23 @@
     border-radius: 30px;
     // .platf__wrapper
     position: relative;
-
+    overflow: hidden;
+    margin: 0 20px;
     &::before {
         content: '';
         position: absolute;
-        right: 0;
+        right: -10%;
         top: calc(50% - 260px);
-        width: 50%;
-        height: calc(520px);
+        width: 60%;
+        height: 560px;
         background-image: url(../../assets/imgs/platf-main.png);
         background-repeat: no-repeat;
         background-position: left center;
         background-size: contain;
         z-index: 2;
+        @media(max-width:1200px) {
+            width: 50%;
+        }
     }
 
     &::after {
@@ -30,11 +34,15 @@
         background-repeat: no-repeat;
         background-position: left bottom;
         background-size: cover;
+
     }
 
     &__wrapper {
         margin: 0 15px;
         margin-top: -80px;
+        max-width: 1480px;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     // .platf__body
@@ -42,6 +50,7 @@
     &__body {
         display: flex;
         align-items: center;
+        
     }
 
     // .platf__text
@@ -51,7 +60,7 @@
 
     &__text {
         padding: 230px 0 180px;
-        width: 50%;
+        width: 60%;
         max-width: 560px;
 
         h1 {
@@ -62,6 +71,7 @@
             display: block;
             text-transform: uppercase;
             margin-bottom: 24px;
+            line-height: 1.4;
         }
 
         p {
@@ -81,7 +91,7 @@
             button,
             a {
                 border-radius: 16px;
-
+                padding: 24px 40px;
                 &.trans-btn {
                     color: var(--blue);
                     border: 1px solid var(--blue);
@@ -114,6 +124,12 @@
             }
             p {
                font-size: 18px;
+            }
+            .action {
+                a, button{
+                    padding: 24px 28px;
+                    font-size: 16px;
+                }
             }
         }
 

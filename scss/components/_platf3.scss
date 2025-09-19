@@ -22,7 +22,7 @@
         background-color: #F6F6F6;
         border-radius: 18px;
         margin: 0 12px 24px;
-        padding: 24px 12px;
+        padding: 24px 20px;
         display: flex;
         flex-direction: column;
         height: auto;
@@ -33,6 +33,11 @@
             width: calc(33.33% - 24px);
         }
 
+        &:first-child {
+            .text {
+                padding-top: 10px;
+            }
+        }
         .text {
             margin-bottom: 20px;
 

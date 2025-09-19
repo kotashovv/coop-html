@@ -150,9 +150,13 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            transition: .35s ease;
             svg {
                 display: block;
 
+            }
+            &.swiper-button-disabled {
+                opacity: .5;
             }
         }
 

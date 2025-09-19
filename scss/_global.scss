@@ -53,6 +53,9 @@ body {
     display: flex;
     align-items: center;
     width: fit-content;
+    &:hover {
+        background-color: #121fd8;
+    }
     &.blue {
         background-color: #1928F0;
         color: #fff;
@@ -61,6 +64,10 @@ body {
         background-color: #EB5A20;
         color: #fff;
         border-radius: 16px;
+        transition: .35s ease;
+        &:hover {
+            background-color: #ca4410;
+        }
     }
     svg {
         display: block;

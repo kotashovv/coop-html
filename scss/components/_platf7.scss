@@ -28,7 +28,16 @@
                 display: flex;
                 justify-content: space-between;
                 width: 100%;
+                border-radius: 16px;
                 max-width: none;
+                svg {
+                    transition: .35s ease;
+                }
+                &:hover {
+                    svg {
+                        transform: translateX(5px);
+                    }
+                }
             }
         }
     }
@@ -41,6 +50,7 @@
         color: #000;
         background-color: #F6F6F6;
         border-radius: 16px;
+        line-height: 1.4;
     }
 }
 
