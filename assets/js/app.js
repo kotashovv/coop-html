@@ -1,5 +1,69 @@
 document.addEventListener('DOMContentLoaded', () => {
 
+    const tabButtons = document.querySelectorAll('.techno__tab');
+    if (tabButtons.length != 0) {
+        const tabItems = document.querySelectorAll('.techno__tab-item');
+
+        
+        function switchTab(index) {
+            
+            tabButtons.forEach(button => button.classList.remove('active'));
+
+            
+            if (tabButtons[index]) {
+                tabButtons[index].classList.add('active');
+            }
+
+            
+            tabItems.forEach(item => {
+                if (item.classList.contains('active')) {
+                    item.style.opacity = '0';
+                    setTimeout(() => {
+                        item.classList.remove('active');
+                    }, 200);
+                }
+            });
+
+            
+            setTimeout(() => {
+                if (tabItems[index]) {
+                    tabItems[index].classList.add('active');
+                    tabItems[index].style.opacity = '0';
+
+                    setTimeout(() => {
+                        tabItems[index].style.opacity = '1';
+                    }, 10);
+                }
+            }, 200);
+        }
+
+        
+        tabButtons.forEach((button, index) => {
+            button.addEventListener('click', function () {
+                switchTab(index);
+            });
+        });
+
+        
+        tabItems.forEach(item => {
+            item.style.transition = 'opacity 0.2s ease-in-out';
+            item.style.opacity = '0';
+        });
+
+        
+        setTimeout(() => {
+            if (tabItems[0]) {
+                tabItems[0].classList.add('active');
+                tabItems[0].style.opacity = '1';
+            }
+            if (tabButtons[0]) {
+                tabButtons[0].classList.add('active');
+            }
+        }, 100);
+    }
+
+
+
     const howSection = document.querySelector(".how");
 
     if (howSection) {
