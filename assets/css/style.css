@@ -3396,6 +3396,12 @@ body button {
   line-height: 1;
   font-weight: 600;
   margin-bottom: 7px;
+  gap: 5px;
+}
+.tarifs-mobile__item .name .price span {
+  color: #929db2;
+  display: inline-block;
+  text-decoration: line-through;
 }
 .tarifs-mobile__item .name > span {
   display: block;

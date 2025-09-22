@@ -323,10 +323,14 @@
                 line-height: 1;
                 font-weight: 600;
                 margin-bottom: 7px;
-
+                gap: 5px;
                 p {}
 
-                span {}
+                span {
+                    color: #929db2;
+                    display: inline-block;
+                    text-decoration: line-through;
+                }
             }
 
             >span {
