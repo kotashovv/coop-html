@@ -6,6 +6,9 @@
     position: relative;
     overflow: hidden;
     margin: 0 20px;
+    .container {
+        max-width: 1345px;
+    }
     &::before {
         content: '';
         position: absolute;
@@ -86,7 +89,7 @@
         .action {
             display: flex;
             align-items: stretch;
-            gap: 24px;
+            gap: 16px;
 
             button,
             a {

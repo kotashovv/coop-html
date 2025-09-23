@@ -40,9 +40,11 @@
             font-size: 18px;
             font-weight: 500;
             border-bottom: 1px solid #C0C8D2;
+            font-weight: 400;
             cursor: pointer;
             &.active {
                 border-color: var(--blue);
+                font-weight: 500;
                 color: var(--blue);
             }
 		}
@@ -88,6 +90,7 @@
         &__tab {
             width: auto;
             white-space: nowrap;
+            font-size: 13px;
         }
     }
 }

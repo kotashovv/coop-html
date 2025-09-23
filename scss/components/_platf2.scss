@@ -9,6 +9,7 @@
         align-items: flex-end;
         margin-bottom: 140px;
         position: relative;
+
         &::before {
             content: '';
             position: absolute;
@@ -22,27 +23,30 @@
             background-repeat: no-repeat;
             background-position-x: center;
             background-position-y: 25px;
-            
+
         }
     }
 
     // .platf2__item
 
     &__item {
-        width:  50%;
-        padding: 16px 20px;
+        width: 50%;
+        padding: 16px 20px 24px;
         background-color: #F6F6F6;
         border-radius: 12px;
+
         &:nth-child(1) {
             margin-left: 24px;
             width: calc(50% - 24px);
             max-width: 560px;
         }
+
         &:nth-child(2) {
             max-width: 410px;
             margin-left: auto;
             transform: translateY(60px);
         }
+
         &:nth-child(3) {
             max-width: 430px;
             width: 50%;
@@ -50,12 +54,14 @@
             margin-left: 100px;
             margin-top: 80px;
         }
+
         &:nth-child(4) {
             max-width: 420px;
             width: 50%;
             margin: 0 auto;
             transform: translateY(60px);
         }
+
         .icon {
             width: 48px;
             height: 48px;
@@ -65,6 +71,7 @@
             align-items: center;
             justify-content: center;
             margin-bottom: 12px;
+
             svg {
                 display: block;
             }
@@ -74,15 +81,18 @@
             p {
                 margin: 0;
                 display: block;
-                color: var(--black);
+                color: #2F333F;
+                line-height: 1.4;
                 font-weight: 600;
                 margin-bottom: 8px;
                 font-size: 20px;
             }
+
             span {
                 display: block;
                 font-size: 18px;
-                color: var(--black);
+                color: #2F333F;
+                line-height: 1.4;
                 font-weight: 400;
             }
         }
@@ -90,7 +100,7 @@
     }
 
     &__title {
-        margin-bottom: 60px; 
+        margin-bottom: 60px;
     }
 
     // .platf__final
@@ -101,6 +111,7 @@
         max-width: 1120px;
         width: 100%;
         display: flex;
+        font-weight: 500;
         text-align: center;
         border: 1px solid #950F0F;
         padding: 20px;
@@ -108,6 +119,7 @@
         color: #950F0F;
         border-radius: 16px;
         font-size: 24px;
+
         @media(max-width:767px) {
             font-size: 20px;
         }
@@ -119,24 +131,30 @@
         &__plan {
             flex-direction: column;
             align-items: flex-start;
+
             &::before {
                 background-image: url(../../assets/imgs/line2.png);
                 background-size: 100% 90%;
                 height: 100%;
             }
+
             margin-bottom: 40px;
         }
+
         &__item {
             box-sizing: border-box;
+
             &:nth-child(n) {
                 transform: none;
             }
+
             &:nth-child(1) {
                 margin-right: 0;
                 margin-left: 24px;
                 margin-bottom: 24px;
                 width: 100%;
             }
+
             &:nth-child(2) {
                 margin-left: auto;
                 margin-right: 24px;
@@ -144,12 +162,14 @@
                 max-width: 420px;
                 margin-bottom: 24px;
             }
+
             &:nth-child(3) {
                 margin-top: 0;
                 margin-left: 60px;
                 margin-right: 0;
                 margin-bottom: 24px;
             }
+
             &:nth-child(4) {
                 max-width: 420px;
                 width: 100%;
@@ -166,21 +186,25 @@
         &__title {
             margin-bottom: 24px;
         }
+
         &__plan {
             &::before {
                 display: none;
             }
 
         }
+
         &__item {
             width: 100% !important;
             box-sizing: border-box;
             max-width: none !important;
             margin: 0 0 16px !important;
+
             .text {
                 p {
                     font-size: 18px;
                 }
+
                 span {
                     font-size: 16px;
                 }

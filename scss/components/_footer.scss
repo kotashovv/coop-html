@@ -42,6 +42,10 @@
                 font-weight: 450;
                 font-size: 22px;
                 line-height: 1.2;
+                &.blue {
+                    color: var(--blue);
+                    border-left-color: var(--blue);
+                }
             }
         }
     }

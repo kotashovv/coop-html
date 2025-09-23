@@ -1,4 +1,5 @@
 .platf7 {
+    padding-top: 40px;
     padding-bottom: 80px;
     // .platf7__items
 
@@ -30,9 +31,11 @@
                 width: 100%;
                 border-radius: 16px;
                 max-width: none;
+
                 svg {
                     transition: .35s ease;
                 }
+
                 &:hover {
                     svg {
                         transform: translateX(5px);
@@ -51,33 +54,58 @@
         background-color: #F6F6F6;
         border-radius: 16px;
         line-height: 1.4;
+        .icon {
+            margin-bottom: 12px;
+        }
+        .text {
+            h3 {
+                line-height: 1.4;
+                font-size: 22px;
+                line-height: 1.4;
+                color: #000;
+                margin: 0;
+                margin-bottom: 12px;
+            }
+            p {
+                margin: 0;
+                display: block;
+                color: #2F333F;
+            }
+
+            p {
+                line-height: 1.6;
+            }
+        }
     }
 }
 
 @media(max-width:920px) {
     .platf7 {
+        padding-top: 24px;
+
         &__items {
             display: flex;
             flex-direction: column;
             gap: 24px;
-            .grid-item {
-                
-            }   
+
+            .grid-item {}
         }
     }
 }
+
 @media(max-width:767px) {
     .platf7 {
         &__items {
-            
+
             .grid-item {
                 h3 {
                     font-size: 16px;
                 }
+
                 p {
                     font-size: 14px;
                 }
-            }   
+            }
         }
     }
 }

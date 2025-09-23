@@ -1,20 +1,46 @@
 document.addEventListener('DOMContentLoaded', () => {
 
+    const tabHeads = document.querySelectorAll('[data-tabs] .item-head');
+
+
+    if (tabHeads.length != 0) {
+        const tabContents = document.querySelectorAll('.serv6__body .serv6__item');
+
+        tabHeads.forEach((head, index) => {
+            head.addEventListener("click", () => {
+
+                tabHeads.forEach(h => h.classList.remove("active"));
+                tabContents.forEach(c => c.classList.remove("active"));
+
+                const contentIndex = index % 2;
+                tabHeads.forEach((h, i) => {
+
+                    if (i % 2 === contentIndex) h.classList.add("active");
+                });
+                tabContents[contentIndex].classList.add("active");
+            });
+        });
+    }
+
+
+
+
+
     const tabButtons = document.querySelectorAll('.techno__tab');
     if (tabButtons.length != 0) {
         const tabItems = document.querySelectorAll('.techno__tab-item');
 
-        
+
         function switchTab(index) {
-            
+
             tabButtons.forEach(button => button.classList.remove('active'));
 
-            
+
             if (tabButtons[index]) {
                 tabButtons[index].classList.add('active');
             }
 
-            
+
             tabItems.forEach(item => {
                 if (item.classList.contains('active')) {
                     item.style.opacity = '0';
@@ -24,7 +50,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 }
             });
 
-            
+
             setTimeout(() => {
                 if (tabItems[index]) {
                     tabItems[index].classList.add('active');
@@ -37,20 +63,20 @@ document.addEventListener('DOMContentLoaded', () => {
             }, 200);
         }
 
-        
+
         tabButtons.forEach((button, index) => {
             button.addEventListener('click', function () {
                 switchTab(index);
             });
         });
 
-        
+
         tabItems.forEach(item => {
             item.style.transition = 'opacity 0.2s ease-in-out';
             item.style.opacity = '0';
         });
 
-        
+
         setTimeout(() => {
             if (tabItems[0]) {
                 tabItems[0].classList.add('active');

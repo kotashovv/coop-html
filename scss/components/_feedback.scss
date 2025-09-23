@@ -3,6 +3,7 @@
     box-sizing: border-box;
     // .feedback__body
     &.custom {
+        padding-bottom: 160px;
         .feedback__body {
             background: #1928F0;
         }
@@ -44,9 +45,9 @@
                 font-size: 12px;
                 text-align: center;
                 font-weight: 400;
-                color: #FFFFFFCC;
+                color: #B5BAFF;
                 display: block;
-
+                
             }
 
             form {

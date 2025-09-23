@@ -12,6 +12,10 @@
         .trans-btn {
             color: #fff;
             border-color: #fff;
+            &:hover {
+                background-color: var(--blue);
+                color: #fff;
+            }
         }
 
         .header__body {
