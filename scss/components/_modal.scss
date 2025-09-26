@@ -17,15 +17,18 @@
     // .case-popup__item
     opacity: 0;
     visibility: hidden;
+
     &.active {
         opacity: 1;
         visibility: visible;
+
         .case-popup {
-            &__item{
+            &__item {
                 transform: translateY(0);
             }
         }
     }
+
     &__item {
         max-width: 1160px;
         margin: 0 15px;
@@ -47,20 +50,24 @@
             &__flex {
                 display: flex;
                 width: 100%;
+
                 .text {
                     max-width: 650px;
                     box-sizing: border-box;
                     width: 60%;
                     margin-right: 20px;
                 }
+
                 .img-flex {
                     width: 40%;
                     gap: 30px;
                     max-width: 420px;
+
                     img {
                         width: calc(50% - 15px);
                         object-fit: contain;
                     }
+
                     display: flex;
                     flex-wrap: wrap;
 
@@ -77,6 +84,7 @@
                 box-sizing: border-box;
                 margin-bottom: 6px;
             }
+
             p {
                 margin: 0;
                 display: block;
@@ -86,6 +94,7 @@
                 color: var(--black);
                 line-height: 1.5;
             }
+
             h3 {
                 font-style: italic;
                 font-weight: 700;
@@ -96,6 +105,7 @@
                 margin: 0;
                 margin-bottom: 4px;
             }
+
             strong {
                 display: block;
                 color: #000;
@@ -132,11 +142,13 @@
         height: 25px;
 
         cursor: pointer;
+
         &:hover {
             svg {
                 filter: brightness(.7);
             }
         }
+
         svg {
             display: block;
             transition: .35s ease;
@@ -147,4 +159,61 @@
     // .case-popup__text
 
     &__text {}
+}
+
+@media(max-width:768px) {
+    .case-popup__item {
+        padding: 40px 20px;
+        box-sizing: border-box;
+
+        .text {
+            h2 {
+                display: block;
+                font-size: 18px;
+            }
+
+            p {
+                font-size: 16px;
+            }
+
+            h3 {
+                font-size: 18px;
+            }
+
+            strong {
+                font-size: 16px;
+            }
+            .main-btn {
+                font-size: 16px;
+                width: 100%;
+                max-width: none;
+                text-align: center;
+                padding: 16px 32px;
+                justify-content: center;
+            }
+        }
+
+        .cases-popup {
+            &__flex {
+                flex-direction: column;
+                width: 100%;
+                box-sizing: border-box;
+
+                .text {
+                    max-width: none;
+                    width: 100%;
+                    margin-bottom: 20px;
+                }
+
+                .img-flex {
+                    max-width: 360px;
+                    width: 100%;
+                    box-sizing: border-box;
+                    margin: 0 auto 40px;
+                }
+            }
+
+
+        }
+    }
 }
