@@ -22,6 +22,58 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
+    const callModalBtn = document.querySelector(".call-popup");
+    if (callModalBtn) {
+        const modal = document.querySelector('.case-popup');
+        const popupItem = modal.querySelector('.case-popup__item');
+        const closeBtn = modal.querySelector('.case-popup__btn-close');
+
+        
+        callModalBtn.addEventListener('click', (e) => {
+            e.preventDefault();
+
+            if (modal.classList.contains('active')) {
+                closeModal();
+            } else {
+                openModal();
+            }
+        });
+
+        
+        function openModal() {
+            modal.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+
+        
+        function closeModal() {
+            modal.classList.remove('active');
+            document.body.style.overflow = '';
+        }
+
+        
+        if (closeBtn) {
+            closeBtn.addEventListener('click', (e) => {
+                e.preventDefault();
+                closeModal();
+            });
+        }
+
+        
+        modal.addEventListener('click', (e) => {
+            
+            if (!popupItem.contains(e.target)) {
+                closeModal();
+            }
+        });
+
+        
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && modal.classList.contains('active')) {
+                closeModal();
+            }
+        });
+    }
 
 
 

@@ -6,8 +6,12 @@
 
     z-index: 2;
     position: relative;
-    border-bottom: 1px solid #E2E2E2;
-    
+
+    &.with-border {
+        border-bottom: 1px solid #E2E2E2;
+
+    }
+
     // .header__body
     &.custom {
         .trans-btn {
@@ -28,7 +32,7 @@
     &.static {
         margin-top: 0;
         padding: 30px 15px;
-        
+
         .container {
             max-width: 1190px;
             margin: 0 auto;
