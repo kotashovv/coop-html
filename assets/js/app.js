@@ -1,5 +1,17 @@
 document.addEventListener('DOMContentLoaded', () => {
 
+
+    const headerJs = document.querySelector('.header-js');
+    if (headerJs) {
+        window.addEventListener('scroll', () => {
+            if (window.scrollY >= 100) {
+                headerJs.classList.add('sticky');
+            } else {
+                headerJs.classList.remove('sticky');
+            }
+        });
+    }
+
     const tabHeads = document.querySelectorAll('[data-tabs] .item-head');
 
 
@@ -28,7 +40,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const popupItem = modal.querySelector('.case-popup__item');
         const closeBtn = modal.querySelector('.case-popup__btn-close');
 
-        
+
         callModalBtn.addEventListener('click', (e) => {
             e.preventDefault();
 
@@ -39,19 +51,19 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
 
-        
+
         function openModal() {
             modal.classList.add('active');
             document.body.style.overflow = 'hidden';
         }
 
-        
+
         function closeModal() {
             modal.classList.remove('active');
             document.body.style.overflow = '';
         }
 
-        
+
         if (closeBtn) {
             closeBtn.addEventListener('click', (e) => {
                 e.preventDefault();
@@ -59,15 +71,15 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         }
 
-        
+
         modal.addEventListener('click', (e) => {
-            
+
             if (!popupItem.contains(e.target)) {
                 closeModal();
             }
         });
 
-        
+
         document.addEventListener('keydown', (e) => {
             if (e.key === 'Escape' && modal.classList.contains('active')) {
                 closeModal();

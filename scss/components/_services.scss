@@ -11,8 +11,7 @@
     margin: 0 auto;
     // .serv-main__text
     min-height: 760px;
-
-    margin-top: -80px;
+    margin-top: 20px;
     display: flex;
     align-items: stretch;
 
@@ -181,7 +180,7 @@
             .text {
                 width: 100%;
                 max-width: 50%;
-                z-index: 100;
+                z-index: 2;
                 color: #fff;
 
                 p {
